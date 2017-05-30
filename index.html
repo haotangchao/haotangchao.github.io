@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lvxuanfeng</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="It's a website about a giser">
+    <meta name="author" content="Tangchao">
+    <link rel=stylesheet href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/tellme.css">
+
+</head>
+
+<body>
+    <ul id="myTab" class="nav nav-tabs">
+        <li class="active">
+            <a href="#home" data-toggle="tab">首页</a>
+        </li>
+        <li><a href="#documents" data-toggle="tab">学习资料</a></li>
+        <li><a href="#map" data-toggle="tab">百度地图API</a></li>
+        <li><a href="#tellme" data-toggle="tab">留言版</a></li>
+        <li class="dropdown">
+            <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">关于我 <b class="caret"></b>
+		</a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+                <li><a href="#education" tabindex="-1" data-toggle="tab">
+                教育经历</a>
+                </li>
+                <li><a href="#interests" tabindex="-1" data-toggle="tab">
+				学习兴趣</a>
+                </li>
+                <li><a href="#community" tabindex="-1" data-toggle="tab">
+                社交软件</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in active" id="home">
+            <h2>这个家伙太懒了，什么也没留下</h2>
+            <p>谁能想到这是一个一年前就开始学前端的人写出来的网站</p>
+        </div>
+        <div class="tab-pane fade" id="documents">
+            <h4><a href="#">* C语言学习笔记</a></h4>
+            <h4><a href="#">* Unix学习笔记</a></h4>
+            <h4><a href="#">* 常用IDL指令</a></h4>
+            <h4><a href="#">* 机器学习学习笔记</a></h4>
+            <h4><a href="#">* python爬虫学习笔记</a></h4>
+            <h4><a href="#">* python学习笔记</a></h4>
+            <h4><a href="#">* 遥感知识点汇总</a></h4>
+        </div>
+        <div class="tab-pane fade" id="map">
+            
+        </div>
+        <div class="tab-pane fade" id="education">
+            <h2>教育经历：</h2>
+            <h4>小学：</h4>
+            <p>2002.9-2008.6 湖州市新风小学</p>
+            <h4>初中：</h4>
+            <p>2008.9-2011.6 <a href="http://baike.baidu.com/item/%E6%B9%96%E5%B7%9E%E6%96%B0%E4%B8%96%E7%BA%AA%E5%A4%96%E5%9B%BD%E8%AF%AD%E5%AD%A6%E6%A0%A1/8520419">湖州市新世纪外国语学校</a></p>
+            <h4>高中：</h4>
+            <p>2011.9-2014.6 <a href="http://baike.baidu.com/item/%E6%B5%99%E6%B1%9F%E7%9C%81%E6%B9%96%E5%B7%9E%E4%B8%AD%E5%AD%A6">浙江省湖州中学</a></p>
+            <h4>本科：</h4>
+            <p>2014.9-至今 <a href="http://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E7%9F%BF%E4%B8%9A%E5%A4%A7%E5%AD%A6">中国矿业大学</a> <a href="http://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E7%9F%BF%E4%B8%9A%E5%A4%A7%E5%AD%A6%E7%8E%AF%E5%A2%83%E4%B8%8E%E6%B5%8B%E7%BB%98%E5%AD%A6%E9%99%A2">环境与测绘学院</a></p>
+        </div>
+        <div class="tab-pane fade" id="tellme">
+            <form action="" method="post" class="bootstrap-frm">
+                <h1>Date?
+                    <span>lonely boy'QQ 344***110</span>
+                </h1>
+                <label>
+                    <span>Your Name :</span>
+                    <input id="name" type="text" name="name" placeholder="Your Full Name" />
+                </label>
+                <label>
+                    <span>Sex?</span><select name="selection">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Never">Never</option>
+                    </select>
+                </label>
+                <label>
+                    <span>Your Age :</span>
+                    <input id="age" type="text" name="age" placeholder="How old are you?" />
+                </label>
+                <label>
+                    <span>Your Email :</span>
+                    <input id="email" type="email" name="email" placeholder="Valid Email Address" />
+                </label>
+                <label>
+                    <span>Message :</span>
+                    <textarea id="message" name="message" placeholder="Date or not?"></textarea>
+                </label>
+                
+                <label>
+                    <span>&nbsp;</span>
+                    <input type="button" class="button" value="Send" />
+                </label>
+            </form>
+        </div>
+        <div class="tab-pane fade" id="interests">
+            <p>目前对线性代数、人工智能、机器学习、计算机视觉、深度学习、遥感影像处理较为感兴趣。
+            </p>
+        </div>
+        <div class="tab-pane fade" id="community">
+            <p><a href="https://www.zhihu.com/people/tangchao_1996/activities">我的逼乎</a>
+            </p>
+            <p><a href="https://github.com/haotangchao">我的github</a>
+            </p>
+            <p>我的新浪微博
+            </p>
+        </div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
