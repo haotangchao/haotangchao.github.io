@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title>tangchaobaba</title>
+    <title>Lvxuanfeng</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="It's a website about a giser">
     <meta name="author" content="Tangchao">
     <link rel=stylesheet href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/tellme.css">
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=4rO57EQQC4syxIYUXIH1W4p6F9qWPYB0"></script>
 
 </head>
 
@@ -42,16 +43,16 @@
             <p>谁能想到这是一个一年前就开始学前端的人写出来的网站</p>
         </div>
         <div class="tab-pane fade" id="documents">
-            <h4><a href="Study Note/C Study Note.md">* C语言学习笔记</a></h4>
-            <h4><a href="Study Note/Unix Programming.md">* Unix学习笔记</a></h4>
-            <h4><a href="#">* 常用IDL指令</a></h4>
-            <h4><a href="Study Note/Machine Learning Study Note.md">* 机器学习学习笔记</a></h4>
-            <h4><a href="Study Note/python爬虫笔记.md">* python爬虫学习笔记</a></h4>
-            <h4><a href="Study Note/python_study_note.md">* python学习笔记</a></h4>
-            <h4><a href="Study Note/Regular Expression.md">* 常用正则命令</a></h4>
+            <h4><a href="Study%2520Note/C%20Study%20Note.md">* C语言学习笔记</a></h4>
+            <h4><a href="Study%2520Note/Unix%20Programming.md">* Unix学习笔记</a></h4>
+            <h4><a href="Study%2520Note/IDL%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.md">* 常用IDL指令</a></h4>
+            <h4><a href="Study%2520Note/Machine%20Learning%20Study%20Note.md">* 机器学习学习笔记</a></h4>
+            <h4><a href="Study%2520Note/python%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.md">* python爬虫学习笔记</a></h4>
+            <h4><a href="Study%2520Note/python_study_note.md">* python学习笔记</a></h4>
+            <h4><a href="#">* 遥感知识点汇总</a></h4>
         </div>
         <div class="tab-pane fade" id="map">
-            
+
         </div>
         <div class="tab-pane fade" id="education">
             <h2>教育经历：</h2>
@@ -67,7 +68,7 @@
         <div class="tab-pane fade" id="tellme">
             <form action="" method="post" class="bootstrap-frm">
                 <h1>Date?
-                    <span>lonely boy'QQ 344***110</span>
+                    <span>lonely boy's QQ 344***110</span>
                 </h1>
                 <label>
                     <span>Your Name :</span>
@@ -76,7 +77,7 @@
                 <label>
                     <span>Sex?</span><select name="selection">
                     <option value="Never">Never</option>
-		    <option value="Once">Once</option>
+                    <option value="Once">Once</option>
                     </select>
                 </label>
                 <label>
@@ -91,10 +92,10 @@
                     <span>Message :</span>
                     <textarea id="message" name="message" placeholder="Date or not?"></textarea>
                 </label>
-                
+
                 <label>
                     <span>&nbsp;</span>
-                    <input type="button" class="button" value="Send" />
+                    <input type="submit" class="button" value="Send" />
                 </label>
             </form>
         </div>
@@ -113,7 +114,15 @@
     </div>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
 </body>
 
 </html>
+<script type="text/javascript">
+    // 百度地图API功能
+    var map = new BMap.Map("map"); // 创建Map实例
+    map.centerAndZoom(new BMap.Point(116.404, 39.915), 11); // 初始化地图,设置中心点坐标和地图级别
+    map.addControl(new BMap.MapTypeControl()); //添加地图类型控件
+    map.setCurrentCity("北京"); // 设置地图显示的城市 此项是必须设置的
+    map.enableScrollWheelZoom(true); //开启鼠标滚轮缩放
+
+</script>
