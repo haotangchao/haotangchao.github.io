@@ -3,126 +3,85 @@
 
 <head>
     <meta charset="utf-8">
-    <title>tangchaobaba</title>
+    <title>Travel Routine</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="It's a website about a giser">
     <meta name="author" content="Tangchao">
-    <link rel=stylesheet href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/tellme.css">
     <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=4rO57EQQC4syxIYUXIH1W4p6F9qWPYB0"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/library/CurveLine/1.5/src/CurveLine.min.js"></script>
+    <style type="text/css">
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            font-family: "微软雅黑";
+        }
+
+    </style>
 
 </head>
 
 <body>
-    <ul id="myTab" class="nav nav-tabs">
-        <li class="active">
-            <a href="#home" data-toggle="tab">首页</a>
-        </li>
-        <li><a href="#documents" data-toggle="tab">学习资料</a></li>
-        <li><a href="#map" data-toggle="tab">百度地图API</a></li>
-        <li><a href="#tellme" data-toggle="tab">留言版</a></li>
-        <li class="dropdown">
-            <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">关于我 <b class="caret"></b>
-		</a>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
-                <li><a href="#education" tabindex="-1" data-toggle="tab">
-                教育经历</a>
-                </li>
-                <li><a href="#interests" tabindex="-1" data-toggle="tab">
-				学习兴趣</a>
-                </li>
-                <li><a href="#community" tabindex="-1" data-toggle="tab">
-                社交软件</a>
-                </li>
-            </ul>
-        </li>
-    </ul>
-    <div id="myTabContent" class="tab-content">
-        <div class="tab-pane fade in active" id="home">
-            <h2>这个家伙太懒了，什么也没留下</h2>
-            <p>谁能想到这是一个一年前就开始学前端的人写出来的网站</p>
-        </div>
-        <div class="tab-pane fade" id="documents">
-            <h4><a href="Study%2520Note/C%20Study%20Note.md">* C语言学习笔记</a></h4>
-            <h4><a href="Study%2520Note/Unix%20Programming.md">* Unix学习笔记</a></h4>
-            <h4><a href="Study%2520Note/IDL%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.md">* 常用IDL指令</a></h4>
-            <h4><a href="Study%2520Note/Machine%20Learning%20Study%20Note.md">* 机器学习学习笔记</a></h4>
-            <h4><a href="Study%2520Note/python%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.md">* python爬虫学习笔记</a></h4>
-            <h4><a href="Study%2520Note/python_study_note.md">* python学习笔记</a></h4>
-            <h4><a href="#">* 遥感知识点汇总</a></h4>
-        </div>
-        <div class="tab-pane fade" id="map">
-
-        </div>
-        <div class="tab-pane fade" id="education">
-            <h2>教育经历：</h2>
-            <h4>小学：</h4>
-            <p>2002.9-2008.6 湖州市新风小学</p>
-            <h4>初中：</h4>
-            <p>2008.9-2011.6 <a href="http://baike.baidu.com/item/%E6%B9%96%E5%B7%9E%E6%96%B0%E4%B8%96%E7%BA%AA%E5%A4%96%E5%9B%BD%E8%AF%AD%E5%AD%A6%E6%A0%A1/8520419">湖州市新世纪外国语学校</a></p>
-            <h4>高中：</h4>
-            <p>2011.9-2014.6 <a href="http://baike.baidu.com/item/%E6%B5%99%E6%B1%9F%E7%9C%81%E6%B9%96%E5%B7%9E%E4%B8%AD%E5%AD%A6">浙江省湖州中学</a></p>
-            <h4>本科：</h4>
-            <p>2014.9-至今 <a href="http://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E7%9F%BF%E4%B8%9A%E5%A4%A7%E5%AD%A6">中国矿业大学</a> <a href="http://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E7%9F%BF%E4%B8%9A%E5%A4%A7%E5%AD%A6%E7%8E%AF%E5%A2%83%E4%B8%8E%E6%B5%8B%E7%BB%98%E5%AD%A6%E9%99%A2">环境与测绘学院</a></p>
-        </div>
-        <div class="tab-pane fade" id="tellme">
-            <form action="" method="post" class="bootstrap-frm">
-                <h1>Date?
-                    <span>lonely boy's QQ 344***110</span>
-                </h1>
-                <label>
-                    <span>Your Name :</span>
-                    <input id="name" type="text" name="name" placeholder="Your Full Name" />
-                </label>
-                <label>
-                    <span>Sex?</span><select name="selection">
-                    <option value="Never">Never</option>
-                    <option value="Once">Once</option>
-                    </select>
-                </label>
-                <label>
-                    <span>Your Age :</span>
-                    <input id="age" type="text" name="age" placeholder="How old are you?" />
-                </label>
-                <label>
-                    <span>Your Email :</span>
-                    <input id="email" type="email" name="email" placeholder="Valid Email Address" />
-                </label>
-                <label>
-                    <span>Message :</span>
-                    <textarea id="message" name="message" placeholder="Date or not?"></textarea>
-                </label>
-
-                <label>
-                    <span>&nbsp;</span>
-                    <input type="submit" class="button" value="Send" />
-                </label>
-            </form>
-        </div>
-        <div class="tab-pane fade" id="interests">
-            <p>目前对线性代数、人工智能、机器学习、计算机视觉、深度学习、遥感影像处理较为感兴趣。
-            </p>
-        </div>
-        <div class="tab-pane fade" id="community">
-            <p><a href="https://www.zhihu.com/people/tangchao_1996/activities">我的逼乎</a>
-            </p>
-            <p><a href="https://github.com/haotangchao">我的github</a>
-            </p>
-            <p>我的新浪微博
-            </p>
-        </div>
-    </div>
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <div style="width:100%;height:100%;border:1px solid gray" id="container"></div>
 </body>
 
-</html>
 <script type="text/javascript">
     // 百度地图API功能
-    var map = new BMap.Map("map"); // 创建Map实例
-    map.centerAndZoom(new BMap.Point(116.404, 39.915), 11); // 初始化地图,设置中心点坐标和地图级别
-    map.addControl(new BMap.MapTypeControl()); //添加地图类型控件
-    map.setCurrentCity("北京"); // 设置地图显示的城市 此项是必须设置的
-    map.enableScrollWheelZoom(true); //开启鼠标滚轮缩放
+    var map = new BMap.Map("container");
+    map.centerAndZoom(new BMap.Point(118.454, 32.955), 6);
+    map.enableScrollWheelZoom();
+    var point1 = new BMap.Point(104.059, 30.593);
+    var point2 = new BMap.Point(103.033, 30.027);
+    var point3 = new BMap.Point(102.821, 30.378);
+    var point4 = new BMap.Point(102.736, 30.810);
+    var point5 = new BMap.Point(102.380, 30.994);
+    var point6 = new BMap.Point(101.897, 30.887);
+    var point7 = new BMap.Point(101.494, 30.487);
+    var point8 = new BMap.Point(101.530, 30.322);
+    var point9 = new BMap.Point(101.543, 30.028);
+    var point10 = new BMap.Point(101.513, 29.011);
+    var point11 = new BMap.Point(101.411, 29.160);
+    var point12 = new BMap.Point(101.513, 29.011);
+    var point13 = new BMap.Point(101.568, 29.848);
+    var point14 = new BMap.Point(101.720, 29.534);
+    var point15 = new BMap.Point(101.543, 30.028);
+    var point16 = new BMap.Point(101.022, 30.041);
+    var point17 = new BMap.Point(100.277, 30.001);
+    var point18 = new BMap.Point(100.304, 29.045);
+    var point19 = new BMap.Point(100.346, 28.461);
+    var point20 = new BMap.Point(100.304, 29.045);
+    var point21 = new BMap.Point(100.115, 29.197);
+    var point22 = new BMap.Point(99.802, 28.936);
+    var point23 = new BMap.Point(99.292, 28.725);
+    var point24 = new BMap.Point(99.306, 28.245);
+    var point25 = new BMap.Point(98.918, 28.474);
+    var point26 = new BMap.Point(98.816, 28.356);
+    var point27 = new BMap.Point(98.918, 28.474);
+    // var point28 = new BMap.Point(98.918, 28.474);
+    var point29 = new BMap.Point(99.309, 28.245);
+    var point30 = new BMap.Point(99.706, 27.838);
+    var point31 = new BMap.Point(100.230, 26.873);
+    var point32 = new BMap.Point(100.860, 27.292);
+    var point33 = new BMap.Point(100.910, 27.722);
+    var point34 = new BMap.Point(100.666, 27.760);
+    var point35 = new BMap.Point(101.283, 27.935);
+    var point36 = new BMap.Point(100.775, 28.390);
+    var point37 = new BMap.Point(101.513, 27.436);
+    var point38 = new BMap.Point(102.272, 27.903);
+
+    var points = [point1, point2, point3, point4, point5, point6, point7, point8, point9, point10, point11, point12, point13, point14, point15, point16, point17, point18, point19, point20, point21, point22, point23, point24, point25, point26, point27, point29, point30, point31, point32, point33, point34, point35, point36, point37, point38];
+
+    var curve = new BMapLib.CurveLine(points, {
+        strokeColor: "blue",
+        strokeWeight: 3,
+        strokeOpacity: 0.5
+    }); //创建弧线对象
+    map.addOverlay(curve); //添加到地图中
+    // curve.enableEditing(); //开启编辑功能
+
 
 </script>
+
+</html>
