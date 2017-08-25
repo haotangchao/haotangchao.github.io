@@ -8,7 +8,7 @@
     <meta name="description" content="It's a website about a giser">
     <meta name="author" content="Tangchao">
     <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=4rO57EQQC4syxIYUXIH1W4p6F9qWPYB0"></script>
-    <script type="text/javascript" src="haotangchao.github.io/js/curve.js"></script>
+    <script type="text/javascript" src='/Users/tangchao/Documents/WebGIS/Test_1/js/curve.js'></script>
     <style type="text/css">
         html,
         body {
@@ -59,7 +59,7 @@
     var point25 = new BMap.Point(98.918, 28.474);
     var point26 = new BMap.Point(98.816, 28.356);
     var point27 = new BMap.Point(98.918, 28.474);
-    // var point28 = new BMap.Point(98.918, 28.474);
+//    var point28 = new BMap.Point(98.918, 28.474);
     var point29 = new BMap.Point(99.309, 28.245);
     var point30 = new BMap.Point(99.706, 27.838);
     var point31 = new BMap.Point(100.230, 26.873);
@@ -73,14 +73,44 @@
 
     var points = [point1, point2, point3, point4, point5, point6, point7, point8, point9, point10, point11, point12, point13, point14, point15, point16, point17, point18, point19, point20, point21, point22, point23, point24, point25, point26, point27, point29, point30, point31, point32, point33, point34, point35, point36, point37, point38];
 
+    function addroute(start, end, middle) {
+        var driving = new BMap.DrivingRoute(map, {
+            renderOptions: {
+                map: map,
+                autoViewport: true
+            }
+        });
+        driving.search(start, end, {
+            waypoints: middle
+        });
+    }
+    addroute(point1, point4, [point2, point3]);
+    addroute(point4, point12, [point5, point6, point7, point8, point9, point10, point11]);
+    addroute(point12, point16, [point13, point14, point15]);
+    addroute(point16, point19, [point17, point18]);
+    addroute(point19, point25, [point20, point21, point22, point23, point24]);
+    addroute(point25, point26);
+    addroute(point26, point27);
+    addroute(point27, point31, [point28, point29, point30]);
+    addroute(point31, point33, [point32]);
+    addroute(point33, point36, [point34, point35]);
+    addroute(point36, point38, [point37]);
+    addroute(point38, point1);
+
+
+    /*var polyline = new BMap.Polyline(points, {
+        strokeColor: "blue",
+        strokeWeight: 3,
+        strokeOpacity: 0.5
+    });
+    map.addOverlay(polyline);
     var curve = new BMapLib.CurveLine(points, {
         strokeColor: "blue",
         strokeWeight: 3,
         strokeOpacity: 0.5
     }); //创建弧线对象
-    map.addOverlay(curve); //添加到地图中
-    // curve.enableEditing(); //开启编辑功能
-
+    map.addOverlay(curve); //添加到地图中 
+    // curve.enableEditing(); //开启编辑功能 */
 
 </script>
 
