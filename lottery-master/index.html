@@ -126,7 +126,7 @@
                 //加息卷5% 2小时
                 {
                     class : 'tissot',
-                    title : '一等奖！' ,
+                    title : '一等奖' ,
                     text : '<em></em>',
                     describe : 'tissot小美人'
                 },
@@ -314,12 +314,12 @@
                                 class : 'liulian',
                                 title : '二等奖' ,
                                 text :'<em></em>',
-                                describe : '2022年每月五盒榴莲'
+                                describe : '2022年每月四盒榴莲'
                             }
                         } else {
                             obj = {
                                 class : 'tissot',
-                                title : '一等奖！' ,
+                                title : '一等奖' ,
                                 text : '',
                                 describe : 'tissot小美人'
                             }
@@ -341,7 +341,7 @@
 
                             //弹出获奖结果提示框
                             var timer2 = setTimeout(function(){
-                                alert( _self.newPrizeList[_self.clickIndex].title )
+                                alert('恭喜您获得'+_self.newPrizeList[_self.clickIndex].title+' '+_self.newPrizeList[_self.clickIndex].describe+'！')
                                 clearTimeout(timer2)
                             },500)
 
@@ -387,7 +387,7 @@
                         _self.flopBtnText = '翻牌';
                         filpPositive();
                     }else{
-                        alert( _self.flopNum || !$('.lottery-reverse').hasClass('out') ? '您还没有进行翻牌哦!' : '您没有更多的抽奖机会了，快去赚取吧' );
+                        alert( _self.flopNum || !$('.lottery-reverse').hasClass('out') ? '您还没有进行翻牌哦!' : '您没有更多的抽奖机会了' );
                     }
                 });
 
