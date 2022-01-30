@@ -1,37 +1,12 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/haotangchao/haotangchao.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
-[lottery](https://haotangchao.github.io/lottery-master/index.html)
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/haotangchao/haotangchao.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+# 这是一个情人节礼物的解决方案
+## 背景
+在传统的逢年过节送礼的环节中，可能会遇到以下这些情况：
+### 买礼物未告知对象
+  对象会感到惊喜，但偶尔会觉得不称心。
+### 买礼物全程与对象商量
+  礼物会比较称心，但她却收获不到未知的喜悦。
+### 花时间自己亲手制作礼物
+  对象会感动，但你通常没有这么多时间应付这么多节日。
+## 解决方案
+这个方案最终送出的礼物在送出前可以让对象对礼物有所了解，不至于送出的礼物过于离谱，同时对象依旧能收获到一份惊喜！
+[点我](https://haotangchao.github.io/lottery-master/index.html)
